@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+    <form action="get">
+        <table>
+            <tr>
+                <td>
+                    <label for="firstname" id="firstname">FIRST NAME</label>
+                </td>
+                <td>    
+                    <input type="text" name="firstname" id="firstname" maxlength="30">
+                    (max 30 characters a-z and A-Z)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lastname" id="lastname">LAST NAME</label>
+                </td>
+                <td>
+                    <input type="text" name="lastname" id="lastname" maxlength="30">
+                    (max 30 characters a-z and A-Z)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dob">DATE OF BIRTH</label>
+                </td>
+                <td>
+                    <select name="DATE" id="date">
+                        <option value="day" id="date">Day</option>
+                    </select>
+
+                    <select name="month" id="month">
+                        <option value="month">Month</option>
+                    </select>
+                    <select name="Year" id="year">
+                        <option value="year">Year</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="email" id="email">EMAIL ID</label>
+                </td>
+                <td>
+                    <input type="email" id="email" name="email">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="mob" id="mob">MOBILE NUMBER</label>
+                </td>
+                <td>
+                    <input type="tel" id="mob" name="mob" maxlength="10" pattern="\d{10}" title="10 digit number only">
+                    (10 digit number)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="gender" id="gen">GENDER</label>
+                </td>
+                <td>
+                    <label for="male">Male
+                    <input type="radio" id="male" name="gender" value="male"></label>
+                    
+                    <label for="female">Female
+                    <input type="radio" id="female" name="gender" value="female"></label>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="address" id="address">ADDRESS</label>
+                </td>
+                <td>
+                    <textarea name="address" id="address"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="city" id="city">CITY</label>
+                </td>
+                <td>
+                    <input type="text" name="city" id="city" maxlength="30" pattern="\d{30}">
+                    (max 30 characters a-z and A-Z)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pin" id="pin">PIN CODE</label>
+                </td>
+                <td>
+                    <input type="tel" name="pin" id="pin" maxlength="6" pattern="\d{6}">
+                    (6 digit number)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="state" id="state">STATE</label>
+                </td>
+                <td>
+                    <input type="text" id="state" name="state" maxlength="30" pattern="\d{30}">
+                    (max 30 characters a-z and A-Z)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="country" id="country">COUNTRY</label>
+                </td>
+                <td>
+                    <input type="text" id="country" name="country" value="India">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="hob" id="hob">HOBBIES</label>
+                </td>
+                <td>
+                    <label for="draw">Drawing</label>
+                    <input type="checkbox" id="hob" name="draw">
+
+                    <label for="sing">Singing</label>
+                    <input type="checkbox" id="hob" name="sing">
+
+                    <label for="dance">Dancing</label>
+                    <input type="checkbox" id="hob" name="dance">
+
+                    <label for="sketch">Sketching</label>
+                    <input type="checkbox" id="hob" name="sketch">
+<br>
+                    <label for="others">Others</label>
+                    <input type="checkbox" id="hob" name="others">
+                    <input type="text" id="hob" name="others">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    QUALIFICATION
+                </td>
+                <td>
+                    <fieldset>
+                    <table>
+                        <tr>
+                            <th>SI.No.</th>
+                            <th>Examination</th>
+                            <th>Board</th>
+                            <th>Percentage</th>
+                            <th>Year of Passing</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Class X</td>
+                            <td>
+                                <label for="b1" id="b1"></label>
+                                <input type="text" id="b1" name="b1" maxlength="10">
+                            </td>
+                            <td>
+                                <label for="b2" id="b2"></label>
+                                <input type="number" id="b2" name="b2" step="0.01">
+                            </td>
+                            <td>
+                                <label for="b3" id="b3"></label>
+                                <input type="text" id="b3" name="b3">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Class XII</td>
+                            <td>
+                                <label for="c1" id="c1"></label>
+                                <input type="text" id="c1" name="c1" maxlength="10">
+                            </td>
+                            <td>
+                                <label for="c2" id="c2"></label>
+                                <input type="text" id="c2" name="c2" step="0.01">
+                            </td>
+                            <td>
+                                <label for="c3" id="c3"></label>
+                                <input type="text" id="c3" name="c3">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Graduation</td>
+                            <td>
+                                <label for="d1" id="d1"></label>
+                                <input type="text" id="d1" name="d1" maxlength="10">
+                            </td>
+                            <td>
+                                <label for="d2" id="d2"></label>
+                                <input type="text" id="d2" name="d2" step="0.01">
+                            </td>
+                            <td>
+                                <label for="d3" id="d3"></label>
+                                <input type="text" id="d3" name="d3">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Masters</td>
+                            <td>
+                                <label for="e1" id="e1"></label>
+                                <input type="text" id="e1" name="e1" maxlength="10" pattern="\d{10}">
+                            </td>
+                            <td>
+                                <label for="e2" id="e2"></label>
+                                <input type="text" id="e2" name="e2" step="0.01">
+                            </td>
+                            <td>
+                                <label for="e3" id="e3"></label>
+                                <input type="text" id="e3" name="e3">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <th>(10 char max)</th>
+                            <th>(upto 2 decimal)</th>
+                        </tr>
+                    </table>
+                </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="courses" id="courses">COURSES <br>APPLIED FOR</label>
+                </td>
+                <td>
+                    <label for="bca">BCA
+                        <input type="radio" id="bca" name="courses" value="bca">
+                    </label>
+
+                    <label for="bcom">B.Com
+                        <input type="radio" id="bcom" name="courses" value="bcom">
+                    </label>
+
+                    <label for="bsc">B.Sc
+                        <input type="radio" id="bsc" name="courses" value="bsc">
+                    </label>
+
+                    <label for="ba">B.A
+                        <input type="radio" id="ba" name="courses" value="ba">
+                    </label>
+                </td>
+            </tr>
+        </table>
+    <br>
+    <center>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </center>
+    </form>
+</fieldset>
+</body>
+</html>
